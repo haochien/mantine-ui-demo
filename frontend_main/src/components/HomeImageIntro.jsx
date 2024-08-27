@@ -7,7 +7,7 @@ export function HomeImageIntro() {
 
   return (
     <Container fluid bg="var(--mantine-color-dark-8)">
-      <Container size="lg" py="xl">
+      <Container size="xl" py="xl">
         <Grid gutter={80}>
 
           <Grid.Col span={{ base: 12, md: 7 }}>

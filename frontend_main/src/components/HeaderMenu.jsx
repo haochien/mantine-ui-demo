@@ -54,7 +54,7 @@ export function HeaderMenu() {
   return (
     <>
     <header className={classes.header}>
-      <Container size="md" className={classes.inner}>
+      <Container size="xl" className={classes.inner}>
         <MantineLogo size={28} />
         <Group gap={5} visibleFrom="sm">
           {items}

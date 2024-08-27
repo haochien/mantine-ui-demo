@@ -88,7 +88,7 @@ import {
     return (
       <Container fluid bg="var(--mantine-color-black-light)">
 
-        <Container size="lg" py="xl">
+        <Container size="xl" py="xl">
           <Title order={2} className={classes.header} ta="center" mt="sm">
             WHAT PEOPLE SAY
           </Title>
