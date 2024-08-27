@@ -1,4 +1,5 @@
 import { useState } from 'react';
+//import { useNavigate } from 'react-router-dom';
 //import { Container, Group, Burger } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { MantineLogo } from '@mantinex/mantine-logo';
@@ -25,14 +26,14 @@ import {
 
 
 const links = [
-  { link: '/about', label: 'Features' },
-  { link: '/pricing', label: 'Pricing' },
-  { link: '/learn', label: 'Learn' },
-  { link: '/community', label: 'Community' },
+  { link: '/Products', label: 'Products' },
+  { link: '/questions', label: 'Q&A' },
+
 ];
 
 export function HeaderMenu() {
-  const [active, setActive] = useState(links[0].link);
+  //const [active, setActive] = useState(links[0].link);
+  //const navigate = useNavigate();
 
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
 
@@ -41,10 +42,10 @@ export function HeaderMenu() {
       key={link.label}
       href={link.link}
       className={classes.link}
-      data-active={active === link.link || undefined}
+      //data-active={active === link.link || undefined}
       onClick={(event) => {
-        event.preventDefault();
-        setActive(link.link);
+      //  setActive(link.link);
+      //  navigate(link.link, { replace: true });
       }}
     >
       {link.label}
@@ -55,7 +56,17 @@ export function HeaderMenu() {
     <>
     <header className={classes.header}>
       <Container size="xl" className={classes.inner}>
-        <MantineLogo size={28} />
+
+        
+
+        <a
+          key={'home'}
+          href={'/'}
+          className={classes.link}
+        >
+          <MantineLogo size={28} />
+        </a>
+
         <Group gap={5} visibleFrom="sm">
           {items}
         </Group>

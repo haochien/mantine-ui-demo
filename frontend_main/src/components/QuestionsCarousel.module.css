@@ -1,0 +1,38 @@
+.controls {
+    transition: opacity 150ms ease;
+    opacity: 0;
+  }
+  
+  .card {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .title {
+    font-family:
+      Greycliff CF,
+      var(--mantine-font-family);
+    font-size: rem(36px);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: var(--mantine-spacing-xl);
+    color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  }
+  
+
+  .description {
+    color: var(--mantine-color-white);
+    opacity: 0.75;
+    max-width: rem(500px);
+    margin-bottom: var(--mantine-spacing-xl);
+  
+    @media (max-width: $mantine-breakpoint-sm) {
+      max-width: 100%;
+    }
+  }
+  
