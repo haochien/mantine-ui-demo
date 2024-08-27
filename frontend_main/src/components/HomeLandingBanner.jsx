@@ -27,7 +27,7 @@ export function HomeLandingBanner() {
 
             <Button
               variant="gradient"
-              gradient={{ from: 'pink', to: 'yellow' }}
+              gradient={{ from: 'blue', to: 'cyan' }}
               size="xl"
               radius="lg"
               className={classes.control}
