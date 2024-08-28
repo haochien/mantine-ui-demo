@@ -1,9 +1,11 @@
 import { Title, SimpleGrid, Text, Button, ThemeIcon, Grid, rem, Image, Container, Group } from '@mantine/core';
 import { IconReceiptOff, IconFlame, IconCircleDotted, IconFileCode } from '@tabler/icons-react';
+import { useNavigate } from 'react-router-dom';
 import classes from './HomeImageIntro.module.css';
 
 
 export function HomeImageIntro() {
+  const navigate = useNavigate();
 
   return (
     <Container fluid bg="var(--mantine-color-dark-8)">
@@ -21,12 +23,12 @@ export function HomeImageIntro() {
           <Grid.Col span={{ base: 12, md: 5 }}>
 
             <Title className={classes.title} order={2} >
-              A fully featured React components library for your next project
+             Innovative Designs, Comprehensive Services, Exceptional Results
             </Title>
 
             <Text c="dimmed"  className={classes.discription}>
-              Build fully functional accessible web applications faster than ever – Mantine includes
-              more than 120 customizable components and hooks to cover you in any situation
+            we offer cutting-edge web design services and premium products, including custom websites, responsive templates, e-commerce solutions, and more. 
+            Our innovative designs and comprehensive support ensure your site is visually stunning, highly functional, and optimized for success. Elevate your online presence with us.
             </Text>
 
             <Group justify="center">
@@ -36,6 +38,9 @@ export function HomeImageIntro() {
                 size="lg"
                 radius="md"
                 mt="xl"
+                onClick={(event) => {
+                  navigate("/products", { replace: true });
+                }}
               >
                 Get started
               </Button>

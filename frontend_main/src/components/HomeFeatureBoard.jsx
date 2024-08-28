@@ -14,21 +14,21 @@ import {
   
   const mockdata = [
     {
-      title: 'Extreme performance',
+      title: 'Branding & Design',
       description:
-        'This dust is actually a powerful poison that will even make a pro wrestler sick, Regice cloaks itself with frigid air of -328 degrees Fahrenheit',
+        "We create tailor-made websites that reflect your brand's unique identity, ensuring a one-of-a-kind online presence",
       icon: IconGauge,
     },
     {
-      title: 'Privacy focused',
+      title: 'Secure & Private',
       description:
-        'People say it can run at the same speed as lightning striking, Its icy body is so cold, it will not melt even if it is immersed in magma',
+        'We implement robust security measures to protect your website and ensure your data remains safe and confidential',
       icon: IconUser,
     },
     {
-      title: 'No third parties',
+      title: 'Mobile Optimization',
       description:
-        'They’re popular, but they’re rare. Trainers who show them off recklessly may be targeted by thieves',
+        ' Every website we design is fully responsive, offering a seamless experience across all devices, from smartphones to desktops',
       icon: IconCookie,
     },
   ];
@@ -55,17 +55,17 @@ import {
       <Container size="xl" py="xl" >
         <Group justify="center">
           <Badge variant="filled" size="lg">
-            Best company ever
+            cutting-edge Development
           </Badge>
         </Group>
   
         <Title order={2} className={classes.title} ta="center" mt="sm">
-          Integrate effortlessly with any technology stack
+          Modern Web Solutions for a Professional Edge
         </Title>
   
         <Text c="dimmed" className={classes.description} ta="center" mt="md">
-          Every once in a while, you’ll see a Golbat that’s missing some fangs. This happens when
-          hunger drives it to try biting a Steel-type Pokémon.
+          Our innovative web solutions are designed to give your business a competitive advantage, 
+          combining sleek design with advanced functionality for a truly professional online presence.
         </Text>
   
         <SimpleGrid cols={{ base: 1, md: 3 }} spacing="xl" mt={50}>

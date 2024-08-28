@@ -1,39 +1,47 @@
-import { Container, Title, Text, Button } from '@mantine/core';
+import { Container, Title, Text, Button, useMantineTheme } from '@mantine/core';
+import { useMediaQuery } from '@mantine/hooks';
+import { useNavigate } from 'react-router-dom';
 import classes from './HomeLandingBanner.module.css';
 
+
 export function HomeLandingBanner() {
+  const theme = useMantineTheme();
+  const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
+  const navigate = useNavigate();
+
   return (
     <div className={classes.root}>
       <Container size="lg">
         <div className={classes.inner}>
           <div className={classes.content}>
             <Title className={classes.title}>
-              A{' '}
+              Crafting{' '}
               <Text
                 component="span"
                 inherit
                 variant="gradient"
                 gradient={{ from: 'pink', to: 'yellow' }}
               >
-                fully featured
+                Modern
               </Text>{' '}
-              React components library
+              Websites for Your Brand
             </Title>
 
             <Text className={classes.description} mt={30}>
-              Build fully functional accessible web applications with ease – Mantine includes more
-              than 100 customizable components and hooks to cover you in any situation
+              We create sleek, user-friendly websites that elevate your brand and drive business growth in the digital world.
             </Text>
 
             <Button
               variant="gradient"
-              gradient={{ from: 'blue', to: 'cyan' }}
-              size="xl"
-              radius="lg"
-              className={classes.control}
-              mt={40}
+              gradient={{ deg: 133, from: 'blue', to: 'cyan' }}
+              size= "lg"
+              radius="md"
+              mt="xl"
+              onClick={(event) => {
+                navigate("/products", { replace: true });
+              }}
             >
-              View Our Products
+              View Products
             </Button>
           </div>
         </div>

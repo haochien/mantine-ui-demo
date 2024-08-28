@@ -5,6 +5,8 @@ import { useDisclosure } from '@mantine/hooks';
 import { MantineLogo } from '@mantinex/mantine-logo';
 import image from '../assets/logo1.png';
 import classes from './HeaderMenu.module.css';
+import { ColorThemeSwitch } from './ColorThemeSwitch';
+
 import {
     Container,
     Group,
@@ -73,7 +75,11 @@ export function HeaderMenu() {
           {items}
         </Group>
 
+        <Group gap={5}>
+        <ColorThemeSwitch />
         <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" size="sm" />
+        
+        </Group>
       </Container>
     </header>
 

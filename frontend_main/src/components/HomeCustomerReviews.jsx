@@ -17,33 +17,33 @@ import {
     {
       name: "Jacob Warnhalter",
       date: "2023-JUN-20",
-      title: "You are the best!!",
+      title: "Exceptional Design and Support",
       review:
-        'I use Heroku to host my Node.js application, but MongoDB add-on appears to be too expensive. I consider switching to Digital Ocean VPS to save some cash.',
+        'Working with Hao Web was a game-changer for our business. The custom website they designed is not only visually stunning but also highly functional. Their ongoing support and quick response to any issues have been fantastic. Highly recommend their services!',
       avatarUrl: "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-2.png",
     },
     {
       name: "Hao Timmy",
       date: "2023-OCT-13",
-      title: "Thank you so much",
+      title: "Professional and Efficient Service",
       review:
-        'This Pokémon likes to lick its palms that are sweetened by being soaked in honey. Teddiursa concocts its own honey by blending fruits and pollen collected by Beedrill. Blastoise has water spouts that protrude from its shell. The water spouts are very accurate.',
+        'We were impressed by the professionalism and efficiency of Hao Web. From the initial consultation to the final launch, their team delivered a modern and user-friendly website that perfectly represents our brand. Their expertise in SEO also boosted our online visibility significantly.',
       avatarUrl: "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-1.png",
     },
     {
       name: "Rainer Alt",
       date: "2024-JAN-08",
-      title: "Super good part",
+      title: "Outstanding E-commerce Platform",
       review:
-        'After 4 scooters, I finally found one that is really good. The suspension in particular is a poem. The performance is also very good. With my 110 kg smaller climbs up to 20%, no problem at all. But the E horn. Who came up with such nonsense? It sounds like a smoke detector. So that needs to be changed. I just ordered a normal bicycle blade. But still 100% recommended',
+        'The e-commerce solution provided by Hao Web exceeded our expectations. The integration was seamless, and the site’s performance has greatly improved. We’ve seen a noticeable increase in sales and customer engagement. Their attention to detail and support have been top-notch.',
       avatarUrl: "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-3.png",
     },
     {
       name: "Jackson Michael",
       date: "2024-FEB-23",
-      title: "Thank you so much",
+      title: "Top-Notch Web Design Expertise",
       review:
-        'Unfortunately my order of the Segway-Ninebot MAX G2 D was canceled here, but I bought it somewhere else in the exact same version (2023). The e-scooter is absolutely great! With a maximum speed of 20 km/h and an impressive range of 70 km, it is perfect for long trips. The road approval for adults makes it particularly practical for everyday use. The quality and performance of this e-scooter are outstanding, and I highly recommend it to anyone looking for a reliable and powerful e-scooter!',
+        'I’m thrilled with the website [Your Company Name] created for us. The modern design and responsive features have received rave reviews from our clients. The team’s knowledge and dedication were evident throughout the project. I’m excited to continue working with them for future updates.',
       avatarUrl: "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-4.png",
     },
 
@@ -65,7 +65,7 @@ import {
               radius="xl"
             />
             <div>
-              <Text fz="sm">Jacob Warnhalter</Text>
+              <Text fz="sm">{feature.name}</Text>
               <Text fz="xs" c="dimmed">
                 {feature.date}
               </Text>
