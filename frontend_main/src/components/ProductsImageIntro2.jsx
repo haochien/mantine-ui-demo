@@ -10,7 +10,7 @@ export function ProductsImageIntro2() {
   const gridOrder = isLargeScreen ? {text: 1, image: 2} : {text: 2, image: 1}
 
   return (
-    <Container fluid bg="var(--mantine-color-dark-7)">
+    <Container fluid bg="light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-7))">
       <Container size="xl" py="xl">
         <Grid gutter={80}>
 

@@ -8,7 +8,7 @@ export function HomeImageIntro() {
   const navigate = useNavigate();
 
   return (
-    <Container fluid bg="var(--mantine-color-dark-8)">
+    <Container fluid bg="light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-8))">
       <Container size="xl" py="xl">
         <Grid gutter={80}>
 

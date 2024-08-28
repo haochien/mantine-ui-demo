@@ -17,11 +17,11 @@
   }
   
   .title {
-    color: var(--mantine-color-blue-0);
+    color: light-dark(var(--mantine-color-dark-8), var(--mantine-color-white));
   }
   
   .description {
-    color: var(--mantine-color-white);
+    color: light-dark(var(--mantine-color-dark-8), var(--mantine-color-white));
   }
 
 

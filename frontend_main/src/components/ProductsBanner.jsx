@@ -38,10 +38,10 @@ export function ProductsBanner() {
       >
         <feature.icon style={{ width: rem(26), height: rem(26) }} stroke={1.5} />
       </ThemeIcon>
-      <Text fz="lg" mt="sm" fw={500}>
+      <Text fz="lg" mt="sm" fw={500} color={"var(--mantine-color-white)"}>
         {feature.title}
       </Text>
-      <Text fz="sm">
+      <Text fz="sm" color={"var(--mantine-color-gray-4)"}>
         {feature.description}
       </Text>
     </div>
@@ -56,7 +56,7 @@ export function ProductsBanner() {
             <Title className={classes.title} order={2}>
               A fully featured React components library for your next project
             </Title>
-            <Text>
+            <Text color={"var(--mantine-color-gray-4)"}>
               Build fully functional accessible web applications faster than ever – Mantine includes
               more than 120 customizable components and hooks to cover you in any situation
             </Text>

@@ -38,7 +38,7 @@ export function ProductsIntroCards() {
   ));
 
   return (
-    <Container fluid bg="var(--mantine-color-dark-8)">
+    <Container fluid bg="light-dark(var(--mantine-color-white), var(--mantine-color-dark-8))">
       <Container size="xl" py="xl">
 
         <Title order={2} className={classes.title} ta="center" mt="sm">

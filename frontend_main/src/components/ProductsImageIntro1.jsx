@@ -6,7 +6,7 @@ import classes from './ProductsImageIntro1.module.css';
 export function ProductsImageIntro1() {
 
   return (
-    <Container fluid bg="var(--mantine-color-dark-8)">
+    <Container fluid bg="light-dark(var(--mantine-color-white), var(--mantine-color-dark-8))">
       <Container size="xl" py="xl">
         <Grid gutter={80}>
 

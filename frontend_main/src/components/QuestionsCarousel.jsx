@@ -40,7 +40,7 @@ function Card({ image, title, description, showButton }) {
           {description}
         </Text>
 
-        {showButton && <Button variant="white" color="dark">
+        {showButton && <Button variant="outline" >
           Contact Us
         </Button>}
 
