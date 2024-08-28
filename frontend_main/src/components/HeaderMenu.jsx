@@ -3,6 +3,7 @@ import { useState } from 'react';
 //import { Container, Group, Burger } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { MantineLogo } from '@mantinex/mantine-logo';
+import image from '../assets/logo1.png';
 import classes from './HeaderMenu.module.css';
 import {
     Container,
@@ -16,7 +17,7 @@ import {
     Drawer,
     Collapse,
     ScrollArea,
-    rem,
+    rem, Image
   } from '@mantine/core';
 
 
@@ -64,9 +65,8 @@ export function HeaderMenu() {
         <a
           key={'home'}
           href={'/'}
-          className={classes.link}
         >
-          <MantineLogo size={28} />
+          <Image src={image} h={40} fit="contain" alt="Logo" />
         </a>
 
         <Group gap={5} visibleFrom="sm">

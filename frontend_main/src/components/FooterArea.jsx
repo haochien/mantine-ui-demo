@@ -1,7 +1,8 @@
-import { Anchor, Group, ActionIcon, rem } from '@mantine/core';
+import { Anchor, Group, ActionIcon, rem, Image, Container } from '@mantine/core';
 import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons-react';
 import { MantineLogo } from '@mantinex/mantine-logo';
 import classes from './FooterArea.module.css';
+import image from '../assets/logo1.png';
 
 const links = [
   { link: '#', label: 'Contact' },
@@ -27,8 +28,13 @@ export function FooterArea() {
 
   return (
     <div className={classes.footer}>
-      <div className={classes.inner}>
-        <MantineLogo size={28} />
+      <Container size="xl" className={classes.inner}>
+        <a
+          key={'home'}
+          href={'/'}
+        >
+          <Image src={image} h={40} fit="contain" alt="Logo" />
+        </a>
 
         <Group className={classes.links}>{items}</Group>
 
@@ -43,7 +49,8 @@ export function FooterArea() {
             <IconBrandInstagram style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
           </ActionIcon>
         </Group>
-      </div>
+      </Container>
     </div>
+
   );
 }

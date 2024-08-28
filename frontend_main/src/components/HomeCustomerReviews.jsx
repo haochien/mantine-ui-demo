@@ -39,7 +39,7 @@ import {
       avatarUrl: "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-3.png",
     },
     {
-      name: "Rainer Alt",
+      name: "Jackson Michael",
       date: "2024-FEB-23",
       title: "Thank you so much",
       review:

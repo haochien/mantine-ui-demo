@@ -50,7 +50,7 @@ export function ContactImageIntro() {
     <div className={classes.wrapper}>
       <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={mobile? 10 : 50} >
         <div className={classes.contacts}>
-          <Title className={classes.title}>Contact us</Title>
+          <Title className={classes.title}>Our Info</Title>
           <Text className={classes.description} mt="sm" mb={30}>
             Leave your email and we will get back to you within 24 hours
           </Text>
