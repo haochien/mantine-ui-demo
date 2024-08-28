@@ -10,6 +10,7 @@ import { Home }  from "./pages/Home"
 import { Products }  from "./pages/Products"
 import { Questions }  from "./pages/Questions"
 import { Contact }  from "./pages/Contact"
+import { NotFound404 }  from "./pages/NotFound404"
 import { TestDemo } from './pages/TestDemo'; 
 
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/questions" element={<Questions />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/test" element={<TestDemo />} />
+          <Route path="*" element={<NotFound404 />} />
         </Routes>
       </BrowserRouter>
     </MantineProvider>
