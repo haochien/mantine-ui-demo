@@ -28,6 +28,8 @@ import {
 const links = [
   { link: '/Products', label: 'Products' },
   { link: '/questions', label: 'Q&A' },
+  { link: '/about', label: 'About' },
+  { link: '/contact', label: 'Contact' },
 
 ];
 
