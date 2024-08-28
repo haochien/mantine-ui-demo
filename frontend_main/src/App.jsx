@@ -1,5 +1,6 @@
 import '@mantine/core/styles.css';
 import '@mantine/carousel/styles.css';
+import '@mantine/notifications/styles.css';
 import { MantineProvider } from '@mantine/core';
 import { theme } from './theme';
 
@@ -13,10 +14,12 @@ import { Contact }  from "./pages/Contact"
 import { NotFound404 }  from "./pages/NotFound404"
 import { TestDemo } from './pages/TestDemo'; 
 
+import { Notifications } from '@mantine/notifications';
 
 function App() {
   return (
     <MantineProvider theme={theme} defaultColorScheme="dark">
+      <Notifications />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />

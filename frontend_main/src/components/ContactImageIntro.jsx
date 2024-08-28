@@ -1,3 +1,4 @@
+import {useState, useEffect} from 'react';
 import {
   Text,
   Title,
@@ -12,8 +13,10 @@ import {
 
 import { IconSun, IconPhone, IconMapPin, IconAt } from '@tabler/icons-react';
 import { useMediaQuery } from '@mantine/hooks';
+import { notifications } from '@mantine/notifications';
 
 import classes from './ContactImageIntro.module.css';
+import { useForm, ValidationError } from '@formspree/react';
 
 
 
@@ -27,6 +30,26 @@ const iconData = [
 export function ContactImageIntro() {
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
+
+  const [state, handleSubmit] = useForm("mvgplbln");
+  //const [state, setState] = useState(false);
+
+  useEffect(() => {
+    if (state.succeeded) {
+    //if (state) {
+      //setState(false)
+      notifications.show({
+        color: 'green',
+        position: 'top-center',
+        autoClose: 7000,
+        title: 'You message has been sent!',
+        message: 'We will contact you within 24 hour',
+        classNames: classes,
+    })
+  }
+  }, [state]);
+
+
 
   const icons = iconData.map((item, index) => (
     <Group mt="xl" key={index}>
@@ -61,20 +84,21 @@ export function ContactImageIntro() {
 
         </div>
         
-        <form className={classes.form} onSubmit={(event) => event.preventDefault()}>
+        <form className={classes.form} onSubmit={handleSubmit}>
           {!mobile && <Text fz="lg" fw={700} className={classes.formTitle}>
             Get in touch
           </Text>}
 
           <div className={classes.fields}>
             <SimpleGrid cols={{ base: 1, sm: 2 }}>
-              <TextInput label="Your name" placeholder="Your name" />
-              <TextInput label="Your email" placeholder="hello@mantine.dev" required />
+              <TextInput name="name" label="Your name" placeholder="Your name" />
+              <TextInput name="email" label="Your email" placeholder="hello@mantine.dev" required />
             </SimpleGrid>
 
-            <TextInput mt="md" label="Subject" placeholder="Subject" required />
+            <TextInput name="subject" mt="md" label="Subject" placeholder="Subject" required />
 
             <Textarea
+              name="message"
               mt="md"
               label="Your message"
               placeholder="Please include all relevant information"
@@ -82,7 +106,7 @@ export function ContactImageIntro() {
             />
 
             <Group justify="flex-end" mt="md">
-              <Button type="submit" className={classes.control}>
+              <Button type="submit" className={classes.control} disabled={state.submitting} loading={state.submitting} >
                 Send message
               </Button>
             </Group>
