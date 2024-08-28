@@ -5,25 +5,25 @@ import classes from './ProductsBanner.module.css';
 const features = [
   {
     icon: IconReceiptOff,
-    title: 'Free and open source',
-    description: 'All packages are published under MIT license, you can use Mantine in any project',
+    title: 'Consulting',
+    description: 'understand your business and goals to develop a strategic plan that aligns your website with your objectives',
   },
   {
     icon: IconFileCode,
-    title: 'TypeScript based',
-    description: 'Build type safe applications, all components and hooks export types',
+    title: 'Branding',
+    description: 'create a cohesive brand identity, ensuring your logo, colors, and messaging resonate with your audience',
   },
   {
     icon: IconCircleDotted,
-    title: 'No annoying focus ring',
+    title: 'Modern Design',
     description:
-      'With new :focus-visible selector focus ring will appear only when user navigates with keyboard',
+      'Design responsive, user-friendly websites that reflect your brand and engage visitors across all devices',
   },
   {
     icon: IconFlame,
-    title: 'Flexible',
+    title: 'Creation and Supporting',
     description:
-      'Customize colors, spacing, shadows, fonts and many other settings with global theme object',
+      'build secure, high-performance websites and provide ongoing maintenance to keep them updated and optimized',
   },
 ];
 
@@ -54,11 +54,11 @@ export function ProductsBanner() {
         <Grid gutter={80} pt={150}>
           <Grid.Col span={{ base: 12, md: 5 }} style={{ minHeight: rem(500) }}>
             <Title className={classes.title} order={2}>
-              A fully featured React components library for your next project
+              Complete Web Solutions: Consult, Brand, Design, Create
             </Title>
             <Text color={"var(--mantine-color-gray-4)"}>
-              Build fully functional accessible web applications faster than ever – Mantine includes
-              more than 120 customizable components and hooks to cover you in any situation
+              we go beyond traditional web design to offer Complete Web Solutions that encompass every aspect of your online presence
+              and ensures that your website functions seamlessly to support your business goals
             </Text>
 
             <Button
@@ -67,6 +67,13 @@ export function ProductsBanner() {
               size="lg"
               radius="md"
               mt="xl"
+              onClick={() => {
+                const pd1Element = document.getElementById('pd1');
+                if (pd1Element) {
+                  pd1Element.scrollIntoView({ behavior: 'smooth' })
+                }
+                
+              }}
             >
               Get started
             </Button>

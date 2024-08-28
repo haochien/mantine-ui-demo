@@ -5,11 +5,9 @@ import classes from './FooterArea.module.css';
 import image from '../assets/logo1.png';
 
 const links = [
-  { link: '#', label: 'Contact' },
-  { link: '#', label: 'Privacy' },
-  { link: '#', label: 'Blog' },
-  { link: '#', label: 'Store' },
-  { link: '#', label: 'Careers' },
+  { link: '/Imprint', label: 'Imprint' },
+  { link: '/privacy', label: 'Privacy' },
+  { link: '/contact', label: 'Contact' },
 ];
 
 export function FooterArea() {
@@ -19,7 +17,6 @@ export function FooterArea() {
       key={link.label}
       href={link.link}
       lh={1}
-      onClick={(event) => event.preventDefault()}
       size="sm"
     >
       {link.label}

@@ -75,10 +75,30 @@ export function HeaderMenu() {
           {items}
         </Group>
 
+
+
         <Group gap={5}>
-        <ColorThemeSwitch />
-        <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" size="sm" />
-        
+          <Group gap={0} visibleFrom="sm">
+            <a
+              key={'en'}
+              className={classes.language}
+              href={'/'}
+              onClick={(event) => event.preventDefault()}
+            >
+              EN
+            </a>
+            <a
+              key={'de'}
+              className={classes.language}
+              href={'/'}
+              onClick={(event) => event.preventDefault()}
+            >
+              DE
+            </a>
+          </Group>
+
+          <ColorThemeSwitch />
+          <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" size="sm" />
         </Group>
       </Container>
     </header>
@@ -96,7 +116,30 @@ export function HeaderMenu() {
         <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
           <Divider my="sm" />
           {items}
+
+          <Group gap={0} mt={rem(50)}>
+            <a
+              key={'en'}
+              className={classes.language}
+              href={'/'}
+              onClick={(event) => event.preventDefault()}
+            >
+              EN
+            </a>
+            <a
+              key={'de'}
+              className={classes.language}
+              href={'/'}
+              onClick={(event) => event.preventDefault()}
+            >
+              DE
+            </a>
+          </Group>
         </ScrollArea>
+
+
+
+        
       </Drawer>
 
     </>

@@ -1,3 +1,5 @@
+import { useNavigate } from 'react-router-dom';
+
 import { Carousel } from '@mantine/carousel';
 import { Image, useMantineTheme, Paper, Text, Title, Button } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
@@ -23,6 +25,8 @@ const data = [
 ];
 
 function Card({ image, title, description, showButton }) {
+  const navigate = useNavigate();
+
   return (
     <Paper
       shadow="md"
@@ -40,7 +44,7 @@ function Card({ image, title, description, showButton }) {
           {description}
         </Text>
 
-        {showButton && <Button variant="outline" >
+        {showButton && <Button variant="outline" onClick={() => navigate("/contact", { replace: true })}>
           Contact Us
         </Button>}
 

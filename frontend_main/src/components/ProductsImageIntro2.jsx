@@ -17,19 +17,18 @@ export function ProductsImageIntro2() {
 
             <Grid.Col span={{ base: 12, md: 6 }} order={gridOrder.text}>
                 <Title className={classes.title} order={2} >
-                  Shitposting AI
+                  Tech & UI Design
                 </Title>
 
                 <Title className={classes.subtitle } order={2} c="dimmed" >
-                  Why discuss online? There's an AI for that!
+                  Innovative Technology Meets Seamless User Experience!
                 </Title>
 
                 <Text className={classes.discription}>
-                  Using modern AI approaches such as GPT-2, Tacotron and Conformers, we created fully autonomous robot heads that engage in heated social media discussions, completely taking the human out of the loop.
-
-                  The TNG Innovation Hacking Team created a prototype of an end-to-end natural language understanding system, employing techniques such as Speech-to-Text (STT), Conditional Text Generation and Text-To-Speech (TTS).
-
-                  Social media comments have become the predominant medium for public discussion. However, discussions on Facebook, Twitter and Reddit are notorious for their poor debate culture and missing conclusiveness. The obvious solution to this tremendous waste of time is automation of such fruitless discussions using a bot.
+                  In today’s fast-paced digital world, staying ahead of the curve requires leveraging the latest technologies and crafting exceptional user experiences. 
+                  We utilize modern frameworks, responsive design techniques, and advanced tools to build websites that are fast, secure, and scalable. 
+                  Our UI design focuses on creating interfaces that are user-friendly, accessible, and engaging, ensuring that visitors can easily navigate and interact with your site. 
+                  By prioritizing both form and function, we deliver websites that not only look great but also provide a seamless experience for every user, across all devices.
                 </Text>
             </Grid.Col>
 
