@@ -15,6 +15,7 @@ import { NotFound404 }  from "./pages/NotFound404"
 import { TestDemo } from './pages/TestDemo'; 
 
 import { Notifications } from '@mantine/notifications';
+import { AffixToTop } from './components/AffixToTop';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="*" element={<NotFound404 />} />
         </Routes>
       </BrowserRouter>
+      <AffixToTop />
     </MantineProvider>
   )
 }
