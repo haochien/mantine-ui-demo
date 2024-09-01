@@ -14,7 +14,7 @@ export function HomeImageIntro() {
 
           <Grid.Col span={{ base: 12, md: 7 }}>
             <Image
-            src="https://images.unsplash.com/photo-1581889470536-467bdbe30cd0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80"
+            src="https://assets.haodevelop.com/haoweb/home/home_2.jpg"
             alt="Running challenge"
             height={400}
             />
