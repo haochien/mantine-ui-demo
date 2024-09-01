@@ -1,0 +1,1 @@
+export const PROD_WEB_URL = "https://ui.haodevelop.com/";

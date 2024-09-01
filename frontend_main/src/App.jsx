@@ -6,6 +6,8 @@ import { theme } from './theme';
 
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { HelmetProvider } from 'react-helmet-async';
+import { HelmetContent } from './components/HelmetContent';
 
 import { Home }  from "./pages/Home"
 import { Products }  from "./pages/Products"
@@ -19,6 +21,16 @@ import { AffixToTop } from './components/AffixToTop';
 
 function App() {
   return (
+    <HelmetProvider>
+    <HelmetContent
+      title='HaoWeb - The best website design'
+      description='Create the best and modern website for your brand'
+      robots='index, follow'
+      pageUrl=''
+      imageUrl='https://assets.haodevelop.com/haoweb/home/home_1.jpg'
+      type='article'
+     />
+
     <MantineProvider theme={theme} defaultColorScheme="dark">
       <Notifications />
       <BrowserRouter>
@@ -33,6 +45,7 @@ function App() {
       </BrowserRouter>
       <AffixToTop />
     </MantineProvider>
+    </HelmetProvider>
   )
 }
 
